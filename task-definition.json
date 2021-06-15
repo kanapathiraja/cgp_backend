@@ -1,0 +1,33 @@
+{
+    "executionRoleArn": "arn:aws:iam::392977643844:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/myapp",
+                    "awslogs-region": "us-west-2",
+                    "awslogs-stream-prefix": "fargate"
+                }
+            },
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                    
+                }
+            ],
+            "image": "392977643844.dkr.ecr.us-west-2.amazonaws.com/cgp_frontend",
+            "name": "cgp_frontend"
+        }
+    ],
+    "memory": "512",
+    "family": "frontend-task",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "256"
+   
+}
