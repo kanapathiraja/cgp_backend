@@ -19,7 +19,7 @@
                 }
             ],
             "image": "392977643844.dkr.ecr.us-west-2.amazonaws.com/cgp_backend",
-            "name": "cgp_backend"
+            "name": "backend"
         }
     ],
     "memory": "512",
