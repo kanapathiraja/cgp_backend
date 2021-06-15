@@ -1,0 +1,12 @@
+{
+    "type": "postgres",
+    "host": "cgpstagingdb.ccykwjrfzgx8.eu-central-1.rds.amazonaws.com",
+    "port": 5432,
+    "username": "cgpdbuser",
+    "password": "Rp5fckMzxejT7HmY",
+    "database": "cgpweb_bulk_qa",
+    "synchronize": false,
+    "autoLoadEntities": true,
+    "entities": ["dist/**/*.entity.js"],
+    "logging": ["query", "error"]
+}

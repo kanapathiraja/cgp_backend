@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "6b096e30-da0c-4538-b46a-ac89df244b91",
+		"name": "Datapunk-cgp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "UserRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"soundar\",\r\n    \"email\": \"soundar.gd@gmail.com\",\r\n    \"password\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/user/register"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"soundar.gd@gmail.com\",\r\n    \"password\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/user/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User List",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": {}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Auth",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "auth",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Au",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6IjIyMmU1NGUyLWI5OWMtNGQxZS05M2RiLTg3YWNlMTE5Zjk4YSIsInVzZXJOYW1lIjoic291bmRhciIsImVtYWlsIjoic291bmRhci5nZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYSQxMCRRanFTLndGb1hhaWNNUWFZenlhY0JPVWV5LlZtZzRPYTdyR3h3ZDZabWgwdEtKb1JleFhRUyIsImNyZWF0ZWRBdCI6IjIwMjEtMDItMDlUMTc6Mjc6MzIuNDQ3WiIsImxhc3RVcGRhdGVkIjoiMjAyMS0wMi0wOVQxNzoyNzozMi40NDdaIiwiYWNjZXB0ZWRQb2xpY3kiOm51bGx9LCJpYXQiOjE2MTI4OTMwODgsImV4cCI6MTY0ODg5MzA4OH0.VtqzVdSefyi4qTPhNgVS1AEio1RuCjM3V6ZtI4-37Jo",
+								"type": "text"
+							}
+						],
+						"url": "localhost:3000/api/user/getAllUser"
+					},
+					"response": []
+				},
+				{
+					"name": "ForgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"email\" : \"soundar.gd@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/user/fotgot-password"
+					},
+					"response": []
+				},
+				{
+					"name": "RESET Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"email\" : \"soundar.gd@gmail.com\",\r\n    \"password\":\"testi\",\r\n    \"confirmPassword\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:3000/api/user/reset-password"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
