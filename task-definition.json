@@ -18,12 +18,12 @@
                     
                 }
             ],
-            "image": "392977643844.dkr.ecr.us-west-2.amazonaws.com/cgp_frontend",
-            "name": "cgp_frontend"
+            "image": "392977643844.dkr.ecr.us-west-2.amazonaws.com/cgp_backend",
+            "name": "cgp_backend"
         }
     ],
     "memory": "512",
-    "family": "frontend-task",
+    "family": "backend-task",
     "requiresCompatibilities": [
         "FARGATE"
     ],
