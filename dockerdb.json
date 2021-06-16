@@ -1,9 +1,9 @@
 {
     "type": "postgres",
-    "host": "cgpstagingdb.ccykwjrfzgx8.eu-central-1.rds.amazonaws.com",
+    "host": "cgpdb.ctourigf8ao9.us-west-2.rds.amazonaws.com",
     "port": 5432,
     "username": "cgpdbuser",
-    "password": "Rp5fckMzxejT7HmY",
+    "password": "postgresdb123",
     "database": "cgpweb_bulk_qa",
     "synchronize": false,
     "autoLoadEntities": true,
