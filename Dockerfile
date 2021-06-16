@@ -21,7 +21,7 @@ RUN npm run build
 
 EXPOSE 3000
 #CMD [ "node", "dist/main" ]
-
+RUN echo "tested successfull"
 #FROM node:10-alpine
 #COPY --from=builder /usr/src/backend-app .
 CMD ["npm", "run", "start:prod"]
