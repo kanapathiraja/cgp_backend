@@ -14,9 +14,6 @@ RUN npm install
 
 # Bundle app source
 COPY . .
-RUN true
-COPY dockerdb.json ./ormconfig.json
-RUN true
 RUN npm run build
 
 EXPOSE 3000
