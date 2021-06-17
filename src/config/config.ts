@@ -49,11 +49,11 @@ export default {
     senderMail: 'contact@cgp.fr',
   },
   serverUrl: {
-    url: 'http://18.184.207.46:3001',
+    url: 'http://claritaz-poc-alb-987060138.us-west-2.elb.amazonaws.com:3000',
   },
   serverApi: {
-    API: 'http://18.184.207.46',
+    API: 'http://claritaz-poc-alb-987060138.us-west-2.elb.amazonaws.com',
   },
-  appUrl: 'http://18.184.207.46',
+  appUrl: 'http://claritaz-poc-alb-987060138.us-west-2.elb.amazonaws.com',
   googleApiKey: 'AIzaSyBJc9TVKg1zjpjU_LJYVeeI62wxm6ss7UU',
 };
